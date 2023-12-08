@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public CharacterController2D controller;
-    public Animator animator;
+    // public Animator animator;
     public float runSpeed = 40f; 
     float horizontalMove = 0f;
     bool jump = false;
@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
+            
         }else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
