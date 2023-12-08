@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public CharacterController2D controller;
-    // public Animator animator;
+    public Animator animator;
     public float runSpeed = 40f; 
     float horizontalMove = 0f;
     bool jump = false;
@@ -17,17 +17,17 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        // animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            // animator.SetBool("IsJumping", true);
+            animator.SetBool("IsJumping", true);
         }
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
-            
+
         }else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
@@ -35,16 +35,16 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // public void OnLanding()
-    // {
-    //     animator.SetBool("IsJumping", false);
-    // }
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
 
 
-    // public void OnCrouching (bool isCrouching)
-    // {
-    //     animator.SetBool("IsCrouching", isCrouching);
-    // }
+    public void OnCrouching (bool isCrouching)
+    {
+        animator.SetBool("IsCrouching", isCrouching);
+    }
 
     void FixedUpdate()
     {
