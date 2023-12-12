@@ -12,25 +12,64 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    //Variables for game over
+    public float interactionRadius = 1.5f;
+    public LayerMask treeHouseLayer;
+    public GameObject treeFoundText;
+    public GameObject restartText;
+    private bool treeHouseFound = false;
+    public GameManager gameManager;
+
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-
-        if (Input.GetButtonDown("Jump"))
+        if (!treeHouseFound)
         {
-            jump = true;
-            animator.SetBool("IsJumping", true);
+            Collider2D treeHouseCollider = Physics2D.OverlapCircle(transform.position, interactionRadius, treeHouseLayer);
+
+            if (treeHouseCollider != null)
+            {
+                // Enable the UI TextMeshPro object
+                treeFoundText.SetActive(true);
+                restartText.SetActive(true);
+                treeHouseFound = true;
+            }
+
+            //if tree house is not found, allow player movement
+
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+
+            }
+            else if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
         }
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
+        else
+        { // if tree house is found, set animation to idle
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsCrouching", false);
+            animator.SetFloat("Speed", 0f);
+            animator.Play("Player_idle");
+            horizontalMove = 0f;
 
-        }else if (Input.GetButtonUp("Crouch"))
-        {
-            crouch = false;
+            // Check for Space key press to restart the game
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // Restart the game
+                gameManager.RestartGame();
+            }
         }
 
     }
