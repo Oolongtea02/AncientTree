@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 77731402}
   - component: {fileID: 77731401}
   - component: {fileID: 77731403}
+  - component: {fileID: 77731404}
   m_Layer: 7
   m_Name: palm (ladder)
   m_TagString: Ladder
@@ -337,6 +338,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.20002612, y: 1.5570033}
   m_EdgeRadius: 0
+--- !u!114 &77731404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77731400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 77731400}
 --- !u!1 &106685045
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +689,7 @@ GameObject:
   - component: {fileID: 500761581}
   - component: {fileID: 500761580}
   - component: {fileID: 500761579}
+  - component: {fileID: 500761582}
   m_Layer: 7
   m_Name: palm (ladder) (1)
   m_TagString: Ladder
@@ -794,6 +809,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &500761582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500761578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 500761578}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +972,7 @@ GameObject:
   - component: {fileID: 1029769321}
   - component: {fileID: 1029769320}
   - component: {fileID: 1029769319}
+  - component: {fileID: 1029769322}
   m_Layer: 7
   m_Name: palm (ladder) (8)
   m_TagString: Ladder
@@ -1063,6 +1092,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029769322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029769318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1029769318}
 --- !u!1 &1029947756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1116,7 @@ GameObject:
   - component: {fileID: 1029947759}
   - component: {fileID: 1029947758}
   - component: {fileID: 1029947757}
+  - component: {fileID: 1029947760}
   m_Layer: 7
   m_Name: palm (ladder) (5)
   m_TagString: Ladder
@@ -1193,6 +1236,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029947760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029947756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1029947756}
 --- !u!1 &1191070147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1260,7 @@ GameObject:
   - component: {fileID: 1191070150}
   - component: {fileID: 1191070149}
   - component: {fileID: 1191070148}
+  - component: {fileID: 1191070151}
   m_Layer: 7
   m_Name: palm (ladder) (2)
   m_TagString: Ladder
@@ -1323,6 +1380,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191070151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191070147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1191070147}
 --- !u!1 &1206821915
 GameObject:
   m_ObjectHideFlags: 0
@@ -80349,6 +80419,7 @@ GameObject:
   - component: {fileID: 1315024624}
   - component: {fileID: 1315024623}
   - component: {fileID: 1315024622}
+  - component: {fileID: 1315024625}
   m_Layer: 7
   m_Name: palm (ladder) (3)
   m_TagString: Ladder
@@ -80468,6 +80539,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315024625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315024621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1315024621}
 --- !u!1 &1423454190
 GameObject:
   m_ObjectHideFlags: 0
@@ -80487,7 +80571,7 @@ GameObject:
   - component: {fileID: 1423454201}
   m_Layer: 6
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80781,6 +80865,7 @@ GameObject:
   - component: {fileID: 1431143556}
   - component: {fileID: 1431143555}
   - component: {fileID: 1431143554}
+  - component: {fileID: 1431143557}
   m_Layer: 7
   m_Name: palm (ladder) (4)
   m_TagString: Ladder
@@ -80900,6 +80985,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431143557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431143553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1431143553}
 --- !u!1 &1643330146
 GameObject:
   m_ObjectHideFlags: 0
@@ -80911,6 +81009,7 @@ GameObject:
   - component: {fileID: 1643330149}
   - component: {fileID: 1643330148}
   - component: {fileID: 1643330147}
+  - component: {fileID: 1643330150}
   m_Layer: 7
   m_Name: palm (ladder) (6)
   m_TagString: Ladder
@@ -81030,6 +81129,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1643330150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643330146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1643330146}
 --- !u!1 &1740676307
 GameObject:
   m_ObjectHideFlags: 0
@@ -81041,6 +81153,7 @@ GameObject:
   - component: {fileID: 1740676310}
   - component: {fileID: 1740676309}
   - component: {fileID: 1740676308}
+  - component: {fileID: 1740676311}
   m_Layer: 7
   m_Name: palm (ladder) (7)
   m_TagString: Ladder
@@ -81160,6 +81273,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740676311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740676307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1740676307}
 --- !u!1 &1891054054
 GameObject:
   m_ObjectHideFlags: 0
@@ -81171,6 +81297,7 @@ GameObject:
   - component: {fileID: 1891054057}
   - component: {fileID: 1891054056}
   - component: {fileID: 1891054055}
+  - component: {fileID: 1891054058}
   m_Layer: 7
   m_Name: palm (ladder) (9)
   m_TagString: Ladder
@@ -81290,6 +81417,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891054058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891054054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6f1021185724609ab2db913a0c1da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeLadder: {fileID: 1891054054}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
